@@ -8,6 +8,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     rel="stylesheet"
     type="text/css" />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/montserrat" type="text/css"/> 
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
@@ -16,10 +17,18 @@
     <header class="wrapper"> 
       <h1>Mellisa Sullivan</h1>
       <h2>Software Developer</h2>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+      </nav>
     </header>
     
     <main>
-      <section><!--who & where you are, what you do, what makes you special-->
+      <section id="home"><!--who & where you are, what you do, what makes you special-->
         <div class="group">
           <div class="item">
             <h3>Shaping the customer experience from the code-up.</h3>
@@ -32,7 +41,7 @@
         </div>
         </section>
 
-        <section>
+        <section id="about">
           <div class="group">
             <div class="item"><!--insert image here-->
               <img src="images/macbook2.jpg" alt="Picture of desk">
@@ -46,16 +55,35 @@
           </div>
         </section>
 
-        <section class="right-align">
-          <h3>Contact Me</h3><!--contact information-->
-          <ul style="list-style-type: none">
-            <li><a href="mailto:mellisa.sullivan95@gmail.com">Email</a></li><!--insert email link here-->
-            <li><a href="https://github.com/mellisa-sullivan">GitHub</a></li><!--insert Github profile here-->
-            <li><a href="https://www.linkedin.com/in/mellisa-sullivan-44021b13a/">LinkedIn</a></li><!--insert LinkedIn profile here ** don't forget to style-->
-          </ul>
+        <section id="contact">
+          <h3>Contact Me</h3>
+          <div class="group">
+            <div class="item"><!--contact information-->
+              <ul style="list-style-type: none">
+              <li><a href="mailto:mellisa.sullivan95@gmail.com">Email</a></li><!--insert email link here-->
+              <li><a href="https://github.com/mellisa-sullivan">GitHub</a></li><!--insert Github profile here-->
+              <li><a href="https://www.linkedin.com/in/mellisa-sullivan-44021b13a/">LinkedIn</a></li><!--insert LinkedIn profile here ** don't forget to style-->
+              </ul>
+            </div>
+            <div class="item">
+            <form action="https://formspree.io/mnqgrrdk" method="post">
+            <label for="name">Your name:<br>
+              <input type="text" name="name">
+            </label><br>
+            <label for="replyTo">Your email:<br>
+              <input type="email" name="_replyto">
+            </label><br>
+            <label for="message">Your message:<br>
+              <textarea name="message"></textarea>
+                </label><br>
+              <button type="submit" value="Send" name="Send">Send</button>
+            </label>
+            </form>
+            </div>
+          </div>
         </section>
 
-        <section class="wrapper">
+        <section class="wrapper" id="portfolio">
           <h3>Portfolio</h3>
           <div class="group">
             <div class="item">
